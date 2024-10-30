@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100svh;
+}
+/* tager hensyn til mobilskærmen. Gør sådan at du kan læse det øverste indhold */ 
+
+/* Typografi */
+@import url()
+
+/* Variables */
+
+
+p {
+    max-width: 75ch;
+    text-wrap: pretty;
+}
+
+img,
+video,
+picture,
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+}
+/* styling ved alt tekster. Hvis der sker en fejl med loading af indhold bliver det tydeligere når fonten er anderledes */ 
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+}
+/* Ændre scroll metoden HVIS der ikke er anden instilling. Men handicappede kan godt have en anden præference fx langsom scroll. Så skal man ikke ændre scroll-behavior */ 
